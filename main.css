@@ -1,18 +1,34 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: rgb(254, 192, 159);
+}
+/*#pomodoro-app{
+  display: flex;
+  justify-content: center;
+}*/
 #container{
-    width:400px;
-    margin:20px auto;
-    padding:20px;
+    display: flex;
+    flex-direction: column;
     text-align:center;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
   }
   
   #timer{ 
+    background-color: #fff;
     color:#f00; 
-    font-size:50px; 
-    margin:10px auto;
+    font-family: "Pilowlava";
+    font-size:7vw;
     border : 5px solid red;
-    border-radius:50%;
-    width:200px;
-    height:200px;
+    border-radius:20px;
+    width:45vw;
+    height:15vw;
     overflow:hidden;
     position:relative;
     -webkit-user-select: none;
@@ -20,43 +36,42 @@
     -ms-user-select: none;
     user-select: none;
     cursor:default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
+  @font-face {
+    font-family: "Pilowlava";
+    src: url(Pilowlava-Regular.woff2);
+  }
+
   #time{
-    margin-top:70px;
     z-index : 1;
     position:relative;
   }
+
   
-  #filler{
-    background : #ddffcc;
-    height: 0px;
-    width: 200px;
-    position:absolute;
-    bottom:0;
-  }
-  
-  #buttons button { 
-    background:#4da6ff; 
+  button { 
+    background:#f00; 
     border:none; 
     color:#fff; 
     cursor:pointer; 
-    padding:5px; 
-    width:90px; 
-    margin:10px auto;
-    font-size:14px;
-    height : 50px;
+    width:9vw; 
+    height: 5vw;
+    margin-top: 3vw;
+    font-family: 'Nunito', sans-serif;
+    font-size:1.2vw;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  /*#buttons button#shortBreak{
-    background : #0c0;
-  }
-  
-  #buttons button#longBreak{
-    background : #080;
-  }
-  
-  #buttons button#stop{
-    background : #f00;
-  }*/
-  
+#buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 44vw;
+}
+
