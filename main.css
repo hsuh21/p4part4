@@ -51,7 +51,10 @@ body{
     position:relative;
   }
 
-  
+h1{
+  color:#f00; 
+  font-family: "Pilowlava";
+}
   button { 
     background:#f00; 
     border:none; 
